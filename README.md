@@ -1,44 +1,25 @@
-# Coding Challenge: Digital Assistant Service
+# Data Science Assignment
 
-## Overview
-A Java Spring Boot service that allows an user to perform two tasks:
-1. Define a name and text response string for a digital assistant.
-2. Send a text message to the named assistant and receive the defined string.
+Link
+to [Mural](https://app.mural.co/t/sap10/m/sap10/1716206632221/a37dd7bad0b27f9cfa81c4753374f1210cf6925a?sender=udbcd2399998d4bf1d3a67360)
 
-## Technologies
-- Java 21
-- Spring Boot 3.5.0
-- Maven 3.9.9
-- IntelliJ IDEA
+## Data Relationships
 
-## Getting Started
+![Data Relations](data/supplementary/data_relations.svg)
 
-### Prerequisites
-- JDK 21+
+## Questions about the project
 
-### Run
-
-```bash
-# Run the app
-java -jar digitalassistant-0.0.1-SNAPSHOT.jar
-
-The application will start on:
-http://localhost:8080
-
-Base URL for API requests:
-http://localhost:8080/api/assistant
-
-1. Register a new assistant:
-   - Method: POST
-   - URL: http://localhost:8080/api/assistant/register
-   - Body: 
-     ```json
-     {
-       "name": "AssistantName",
-       "response": "Hello, I am your digital assistant!"
-     }
-     ```
-2. Send a message to the registered assistant based on its name:
-    - Method: GET
-    - URL: http://localhost:8080/api/assistant/message/AssistantName
-```
+1. Tip-Daten selbst eingefügt? Nach welchem Muster?  
+   *Antwort:* Er hat das wahre Modell. Maximale Accuracy mit wahrem Modell ist 0.84.
+3. Welche Form soll Report haben? Auch Markdown im Notebook?   
+   *Antwort:* Jupyter Notebook ist ausreichend. Kommentiert und formattiert in Markdown. Vernünftig lesbar. Fokus liegt nicht auf Formattierung, Layout und Schriftart.
+4. Erwartungen an die Abgabe? Umfang?
+5. Evaluation criteria
+    - Optimal model interpretable model quality measures
+    - Significance: State N?
+6. Wie weit muss die Explainability gehen? Z.B. Datenanalyse + neuronales Netz (schwer zu interpretieren) ausreichend?
+   Oder muss trainiertes Model auch interpretierbar sein?  
+   *Antwort:* Bei einfachen Modellen (z.B. lineares Modell) könnte man interpretieren. Bei anderen Modellen ist es kein Muss. Vorangehende Datenanalyse reicht aus.
+8. Sind bisherige Aufgabenstellungen Hinweise (z.B. relative order number)?  
+   *Antwort:* Nicht unbedingt dasselbe Vorgehen/Features, aber ähnliche Muster, z.B. was hat User in Vergangenheit
+   gemacht, wie viele Orders hatte er schon, ...
